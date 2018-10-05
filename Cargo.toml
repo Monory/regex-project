@@ -1,0 +1,25 @@
+[package]
+name = "regex-project"
+version = "0.1.0"
+authors = ["Nikita Chudinov <imonory@yandex.ru>"]
+
+[dev-dependencies]
+criterion = "0.2"
+
+[dependencies]
+error-chain = "0.12.0"
+maplit = "1.0.1"
+fnv = "1.0.6"
+
+[lib]
+name = "regexlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "regexarena"
+path = "src/main.rs"
+
+[[bench]]
+name = "benchmark"
+harness = false
+
